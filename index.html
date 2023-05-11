@@ -13,28 +13,31 @@
 </head>
 
 <body>
-    <header>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="ti ti-menu-2"></i>
-        </label>
-        <label class="logo"> <img src="/design/pictures/FE-Logo-Color.svg" alt="Evers Computersyteme"
-                height="100%"> </label>
+    <section class="NavMenue">
+        <div class="logo">
+            <img src="/design/pictures/FE-Logo-Color.svg" alt="Evers Computersyteme">
+        </div>
 
-        <ul class="list">
-            <li> <a href="" class=test>Home</a></li>
-            <li> <a href="" class=test>Dome</a></li>
-            <li> <a href="" class=test>Fone</a></li>
-            <li> <a href="" class=test>Mome</a></li>
-        </ul>
-    </nav>
-    </header>
-    <main style="position: absolute; top:90px">
+        <!-- Normal NavMenue -->
+        <nav>
+            <ul class="list">
+                <li class="NavItems"> <a href="" class=links>Über Uns</a></li>
+                <li class="NavItems"> <a href="" class=links>Dienstleistung</a></li>
+            </ul>
+
+        </nav>
+
+        <!-- Toggle Menu On/Off when small display -->
+        <input type="checkbox" id="ToggleMenu"/>
+        <input type="checkbox" id="ToggleMenu">
+        <label for="ToggleMenu" class="menu-icon"><i class="ti ti-menu-2"></i></label>
+
+    </section>
+    <!-- <main style="position: absolute; top:90px">
         <div style="border-style: dotted; height:100px; width:100vh;display:block">
 
         </div>
-    </main>
+    </main> -->
 </body>
 
 </html>
