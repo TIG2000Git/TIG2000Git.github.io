@@ -280,7 +280,7 @@ nav {
     color: #daecdf;
 }
 
-.caption-wrapper .country {
+.caption-wrapper .undertitle {
     margin-top: -5px;
     color: #daecdf;
     text-align: center;
@@ -347,4 +347,27 @@ nav {
     margin-top: 10px;
     display: flex;
     justify-content: space-evenly;
+}
+
+
+/* Spacer to next part*/
+.spacer {
+    position:relative;
+    margin: 50px  0px 0px;
+    background-image: url("/design/pictures/photovoltaic-2814504.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 200px;
+}
+.spacer>p {
+    position:absolute;
+    margin: 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #FF0000;
 }
