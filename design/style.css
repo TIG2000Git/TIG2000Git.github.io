@@ -4,20 +4,7 @@ body {
     margin: 0;
 }
 
-/* navbar */
-.NavMenue {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #545454;
-    padding: 10px 15px;
-    width: 100%;
-    height: auto;
-    border-bottom: #f0f0f0;
-    border-style: none none solid none;
-    z-index: 1049;
-}
-
+/* Logo*/
 .logo {
     float: left;
     width: auto;
@@ -27,340 +14,28 @@ body {
 }
 
 .logo>img {
-    height: 100px;
-}
-
-nav {
-    float: right;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: right;
-}
-
-.list {
-    float: left;
-    width: 100%;
-    display: flex;
-    margin: 0 !important;
-}
-
-.NavItems {
-    list-style: none;
-    margin-left: 35px;
-    margin-right: 35px;
-    position: relative;
-}
-
-.links {
-    font-weight: 400;
-    cursor: pointer;
-    color: #f0f0f0;
-    font-size: 17px;
-    padding: 7px 13px;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.NavItems :hover {
-    transition: 0.4s all ease;
-    color: #FF0000;
-}
-
-.NavItems::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 1px;
-    bottom: -3px;
-    left: 0;
-    background-color: #FF0000;
-    transform-origin: bottom right;
-    transition: transform 0.5s ease-out;
-}
-
-.NavItems:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-.menu-icon {
-    position: absolute;
-    line-height: 110px;
-    font-size: 40px;
-    float: right;
-    cursor: pointer;
-    right: 40px;
-    display: none;
-}
-
-/* Burger Menue */
-.hamburger {
-    cursor: pointer;
-    display: none;
-}
-
-#nav-check {
-    display: none;
-}
-
-.hamburger svg {
-    /* The size of the SVG defines the overall size */
-    height: 3em;
-    /* Define the transition for transforming the SVG */
-    -webkit-transition: -webkit-transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: -webkit-transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.line {
-    fill: none;
-    stroke: white;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-width: 3;
-    /* Define the transition for transforming the Stroke */
-    -webkit-transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.line-top-bottom {
-    stroke-dasharray: 12 63;
-}
-
-.NavMenue>#nav-check:checked~.hamburger svg {
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-}
-
-.NavMenue>#nav-check:checked~.hamburger svg .line-top-bottom {
-    stroke-dasharray: 20 300;
-    stroke-dashoffset: -32.42;
-}
-
-/* Make nav Responsive */
-
-@media (max-width:715px) {
-    .hamburger {
-        display: inline-block;
-        float: right;
-        position: relative;
-        top: 3vh;
-        right: 2vh;
-    }
-
-    .list {
-        padding-left: 10px;
-        display: block;
-        position: absolute;
-        top: 126px;
-        left: 0%;
-        width: 100%;
-        background-color: #545454;
-    }
-
-    .list::after {
-        content: '';
-        width: 110px;
-        position: absolute;
-        top: 50%;
-        left: -3vh;
-        height: 1px;
-        rotate: 90deg;
-        background: #FF0000;
-    }
-
-    .NavItems {
-        width: fit-content;
-        margin: 25px 6%;
-    }
-
-    .NavMenue>#nav-check:not(:checked)~nav .list {
-        animation: out 1s ease 0s 1 normal forwards;
-    }
-
-    @keyframes out {
-        0% {
-            opacity: 1;
-            width: 100%;
-        }
-
-        70% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 0;
-            width: 0px;
-        }
-    }
-
-    .NavMenue>#nav-check:checked~nav .list {
-        animation: in 1s ease 0s 1 normal forwards;
-    }
-
-    @keyframes in {
-        0% {
-            opacity: 0;
-            width: 0px;
-
-        }
-
-        100% {
-            opacity: 1;
-            width: 100%;
-        }
-    }
-}
-
-@media (max-width:400px) {
-    .logo>img {
-        width: 220px;
-    }
-
-    .hamburger {
-        right: 4vh;
-        top: 5vh;
-    }
-
+    height: 70px;
 }
 
 /* Content */
-.SideContent {
-    position: fixed;
-    top: 127px;
-    left: 0;
-
-
-    width: 100%;
-    height: 100vh;
-}
-
-
-/* Slide show */
-
-/* Main Image*/
-
-.wrapper {
-    position: relative;
-}
-
-#mainPhoto {
-    width: 100%;
-    height: 450px;
-    object-fit: cover;
-    transition: 0.3s;
-}
-
-/* Main Image Caption*/
-
-.caption-wrapper {
-    top: 0;
-    opacity: 0;
+.move {
     position: absolute;
-    height: 400px;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    transition: 0.3s;
+    top: 120px;
+    left: 0;
 }
-
-.caption-wrapper #caption {
-    font-family: "Playfair Display", serif;
-    font-weight: 700;
-    text-transform: capitalize;
-    font-size: 70px;
-    margin-top: 50px;
-    text-align: center;
-    color: #daecdf;
-}
-
-.caption-wrapper .undertitle {
-    margin-top: -5px;
-    color: #daecdf;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 3px;
-    font-size: 18px;
-}
-
-.caption-wrapper .btn {
-    margin: 180px 0;
-    text-align: center;
-}
-
-.caption-wrapper .btn a {
-    background: rgba(255, 255, 255, 0.8);
-    box-shadow: 0px 5px 5px 2px rgba(33, 47, 48, 0.3);
-    color: rgba(33, 47, 48, 1);
-    font-weight: 600;
-    text-decoration: none;
-    padding: 10px 30px;
-    border-radius: 25px;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.caption-wrapper .btn a:hover {
-    background: rgba(33, 47, 48, 0.9);
-    border: 2px solid #daecdf;
-    color: #daecdf;
-}
-
-.wrapper:hover #mainPhoto,
-.wrapper:hover .caption-wrapper {
-    opacity: 1;
-    height: 500px;
-}
-
-/* Secondary Images*/
-
-.imgCarousel {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    transition: 0.3s;
-    margin: 0 2px;
-    border: 0px solid #daecdf;
-}
-
-.imgCarousel:hover {
-    width: 110px;
-    height: 110px;
-    border: 3px solid #daecdf;
-    margin: 3px;
-}
-
-.carrussel img {
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.1);
-}
-
-.image-wrapper {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
 
 /* Spacer to next part*/
 .spacer {
-    position:relative;
-    margin: 50px  0px 0px;
+    position: relative;
+    margin: 20px 0px;
     background-image: url("/design/pictures/photovoltaic-2814504.jpg");
     background-position: 50% 50%;
     background-size: cover;
     height: 200px;
 }
+
 .spacer>p {
-    position:absolute;
+    position: absolute;
     margin: 0px;
     top: 50%;
     left: 50%;
@@ -371,3 +46,16 @@ nav {
     text-transform: capitalize;
     color: #FF0000;
 }
+
+@media only screen and (max-width: 415px) {
+    .move{
+        top: 105px;
+    }
+    .spacer{
+        height: 100px;
+    }
+    .spacer>p  {
+        font-size: 2rem;
+        
+    }
+  }
