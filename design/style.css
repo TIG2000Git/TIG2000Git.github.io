@@ -1,5 +1,5 @@
 body {
-    background-color: #2B2B2B;
+    background-color: #f9c54e;
     color: #ffffff;
     margin: 0;
 }
@@ -14,14 +14,29 @@ body {
 }
 
 .logo>img {
-    height: 70px;
+    height: 90px;
 }
+
+.navbar {
+    background-color:#7cc945 ;
+}
+
+@media (min-width: 1815px){
+.navbar-expand-xxl {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+}
+
 
 /* Content */
 .move {
     position: absolute;
-    top: 120px;
     left: 0;
+}
+
+.img-height{
+    height: 85vh;
 }
 
 /* Spacer to next part*/

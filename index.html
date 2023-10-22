@@ -5,12 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
-    <link href='https://css.gg/css' rel='stylesheet'>
+    <link href="/css/main.min.css" rel="stylesheet">
     <link href="/design/style.css" rel="stylesheet">
     <title>Evers Solartechnik</title>
 
@@ -18,7 +13,7 @@
 
 <body>
     <section id="navbar">
-        <nav class="navbar navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-nav bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/index.html">
                     <div class="logo">
@@ -40,30 +35,30 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/index.html">Startseite</a>
+                                <a class="nav-link active fs-4" aria-current="page" href="/index.html">Startseite</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/pv_anlagen.html">Solar/Photovoltaik Anlagen</a>
+                                <a class="nav-link fs-4" href="/pv_anlagen.html">Solar/Photovoltaik Anlagen</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/pv_speicher.html">Solar Speichersysteme</a>
+                                <a class="nav-link fs-4" href="/pv_speicher.html">Solar Speichersysteme</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/edv.html">Computer EDV/Elektronik</a>
+                                <a class="nav-link fs-4" href="/edv.html">Computer EDV/Elektronik</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/umwelt.html">Umwelt</a>
+                                <a class="nav-link fs-4" href="/umwelt.html">Umwelt</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/bilder.html">Solaranlagen Beispielbilder</a>
+                                <a class="nav-link fs-4" href="/bilder.html">Solaranlagen Beispielbilder</a>
                             </li>
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <li class="nav-item dropdown pe-5">
+                                <a class="nav-link dropdown-toggle fs-4" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Infos
                                 </a>
-                                <ul class="dropdown-menu dropdown-menu-dark">
+                                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-start">
                                     <li><a class="dropdown-item" href="/impressum.html">Impressum</a></li>
                                     <li><a class="dropdown-item" href="/datenschutz.html">Datenschutz</a></li>
                                     <li>
@@ -79,8 +74,9 @@
         </nav>
     </section>
 
-    <main class="container-fluid move">
-        <section class="container-xxl pb-3" id="carousel">
+    <main class="container-fluid move px-0">
+
+        <section class="container-fluid pb-3 px-0" id="carousel">
             <div id="carouselDark" class="carousel carousel-dark slide carousel-fade">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="0" class="active"
@@ -96,7 +92,7 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active " data-bs-interval="10000">
-                        <img src="/design/pictures/caro/Hausdach.jpg" class="d-block w-100 rounded" alt="Hausdach">
+                        <img src="/design/pictures/caro/Hausdach.jpg" class="d-block img-height " alt="Hausdach">
                         <div class="carousel-caption d-none d-sm-block">
                             <a href="/pv_anlagen.html"><button type="button" class="btn btn-outline-danger">Solar/Photovoltaik
                                     Anlagen</button></a>
