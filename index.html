@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="/css/main.min.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
     <link href="/design/style.css" rel="stylesheet">
     <title>Evers Solartechnik</title>
 
@@ -13,11 +13,11 @@
 
 <body>
     <section id="navbar">
-        <nav class="navbar navbar-expand-nav bg-body-tertiary">
+        <nav class="navbar navbar-expand-nav">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/index.html">
                     <div class="logo">
-                        <img src="/design/pictures/logo/FE-Logo-Color.svg" alt="Evers Computersyteme">
+                        <img src="/assets/logo/FE-Logo-Color.svg" alt="Evers Computersyteme">
                     </div>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -33,39 +33,21 @@
                             aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active fs-4" aria-current="page" href="/index.html">Startseite</a>
+                        <ul class="navbar-nav justify-content-end flex-grow-1">
+                            <li class="nav-item pe-3">
+                                <a class="nav-link" href="/pv_anlagen.html">Solar/Photovoltaik Anlagen</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link fs-4" href="/pv_anlagen.html">Solar/Photovoltaik Anlagen</a>
+                            <li class="nav-item pe-3">
+                                <a class="nav-link" href="/pv_speicher.html">Solar Speichersysteme</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link fs-4" href="/pv_speicher.html">Solar Speichersysteme</a>
+                            <li class="nav-item pe-3">
+                                <a class="nav-link" href="/umwelt.html">Umwelt</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link fs-4" href="/edv.html">Computer EDV/Elektronik</a>
+                            <li class="nav-item pe-3">
+                                <a class="nav-link" href="/bilder.html">Solaranlagen Beispielbilder</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link fs-4" href="/umwelt.html">Umwelt</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link fs-4" href="/bilder.html">Solaranlagen Beispielbilder</a>
-                            </li>
-
-                            <li class="nav-item dropdown pe-5">
-                                <a class="nav-link dropdown-toggle fs-4" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Infos
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-start">
-                                    <li><a class="dropdown-item" href="/impressum.html">Impressum</a></li>
-                                    <li><a class="dropdown-item" href="/datenschutz.html">Datenschutz</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="/kontakt.html">Kontakt</a></li>
-                                </ul>
+                            <li class="nav-item pe-3">
+                                <a class="nav-link" href="/edv.html">Computer EDV/Elektronik</a>
                             </li>
                         </ul>
                     </div>
@@ -74,87 +56,42 @@
         </nav>
     </section>
 
-    <main class="container-fluid move px-0">
-
-        <section class="container-fluid pb-3 px-0" id="carousel">
-            <div id="carouselDark" class="carousel carousel-dark slide carousel-fade">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="4"
-                        aria-label="Slide 5"></button>
+    <main class="container-fluid px-0 set">
+        <section id="about">
+            <div class="pictures">
+                <a href="/pv_anlagen.html"><img src="/assets/caro/Hausdach.jpg" alt="Hausdach" style="display: ;"></a>
+                <div class="spacer">
+                    <p>Hausdächer</p>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active " data-bs-interval="10000">
-                        <img src="/design/pictures/caro/Hausdach.jpg" class="d-block img-height " alt="Hausdach">
-                        <div class="carousel-caption d-none d-sm-block">
-                            <a href="/pv_anlagen.html"><button type="button" class="btn btn-outline-danger">Solar/Photovoltaik
-                                    Anlagen</button></a>
-                        </div>
-                    </div>
-                    <div class="carousel-item " data-bs-interval="2000">
-                        <img src="/design/pictures/caro/energiespeicher.jpg" class="d-block w-100 rounded" alt="Batterie">
-                        <div class="carousel-caption d-none d-md-block">
-                            <a href="/pv_speicher.html"><button type="button" class="btn btn-outline-danger">Solar
-                                    Speichersysteme</button></a>
-                        </div>
-                    </div>
-                    <div class="carousel-item ">
-                        <img src="/design/pictures/caro/PC.jpg" class="d-block w-100 rounded" alt="Computersystem">
-                        <div class="carousel-caption d-none d-md-block">
-                            <a href="/edv.html"><button type="button" class="btn btn-outline-danger">Computer
-                                    EDV/Elektronik</button></a>
-                        </div>
-                    </div>
-                    <div class="carousel-item " data-bs-interval="2000">
-                        <img src="/design/pictures/caro/Umwelt.jpg" class="d-block w-100 rounded" alt="Umwelt">
-                        <div class="carousel-caption d-none d-md-block">
-                            <a href="/umwelt.html"><button type="button" class="btn btn-outline-danger">Umwelt</button></a>
-                        </div>
-                    </div>
-                    <div class="carousel-item " data-bs-interval="2000">
-                        <img src="/design/pictures/caro/wohngebaeudes.jpg" class="d-block w-100 rounded" alt="Wohnhaus">
-                        <div class="carousel-caption d-none d-md-block">
-                            <a href="/bilder.html"><button type="button" class="btn btn-outline-danger">Solaranlagen
-                                    Beispielbilder</button></a>
-                        </div>
-                    </div>
+            </div>
+            <div class="pictures">
+                <a href="/pv_anlagen.html"><img src="/assets/caro/energiespeicher.jpg" alt="Hausdach" style="display: ;"></a>
+                <div class="spacertestimg">
+                    <p>Speicher</p>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselDark" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon " aria-hidden="true"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselDark" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </button>
+            </div>
+            <div class="pictures">
+                <a href="/pv_anlagen.html"><img src="/assets/caro/Umwelt.jpg" alt="Hausdach" style="display: ;"></a>
+                <div class="spacertestgrad">
+                    <p>Umwelt</p>
+                </div>
+            </div>
+            <div class="pictures">
+                <a href="/pv_anlagen.html"><img src="/assets/caro/PC.jpg" alt="Hausdach" style="display: ;"></a>
+                <div class="spacer">
+                    <p>Computer</p>
+                </div>
             </div>
         </section>
-
-        <section class="container-xxl bg-dark rounded" id="intoduction">
-            <div class="d-inline-flex flex-column m-3">
-                <p>Wir freuen uns, dass Sie sich für unsere Solaranlagen interessieren. Wir sind ein Unternehmen, das
-                    sich auf die Planung und Konfigurierung von individuellen und nachhaltigen Lösungen für deine
-                    Energieversorgung spezialisiert hat.</p>
-
-                <p> Wir bieten Solarmodule, Wechselrichter, Speicher und Zubehör an, die alle von hoher Qualität und
-                    Effizienz sind. Wir arbeiten mit renommierten Herstellern zusammen, die Ihnen eine lange Garantie
-                    und einen guten Service bieten.</p>
-            </div>
-        </section>
-
+        
         <section id="footer">
             <footer class="pt-3">
                 <ul class="nav justify-content-center border-bottom pb-3 mb-3 ">
                     <li class="nav-item "><a href="/impressum.html"
-                            class="nav-link px-2 text-body-secondary link-secondary">Impressum</a></li>
+                            class="nav-link px-2 link-text">Impressum</a></li>
                     <li class="nav-item"><a href="/datenschutz.html"
-                            class="nav-link px-2 text-body-secondary link-secondary">Datenschutz</a></li>
-                    <li class="nav-item"><a href="/kontakt.html" class="nav-link px-2  link-secondary">Kontakt</a>
+                            class="nav-link px-2 link-text">Datenschutz</a></li>
+                    <li class="nav-item"><a href="/kontakt.html" class="nav-link px-2 link-text">Kontakt</a>
                     </li>
                 </ul>
                 <p class="text-center">© 2023 by Jan Beckmann</p>
@@ -162,13 +99,13 @@
         </section>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-        </script>
+        </script> 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-        </script>
+        </script> 
 </body>
 
 </html>
