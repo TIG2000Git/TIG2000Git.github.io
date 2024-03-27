@@ -48,8 +48,10 @@ body {
     left: 50%;
     transform: translate(-50%, 0%);
   }
-  
-/* Text on pictures Main-page can also have an bg or gradieant */
+
+  .moveup {
+    transform: translate(-50%, -25%);
+  }
 
 .spacer {
     transition: .5s ease;
